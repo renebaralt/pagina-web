@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Excelencia - Educación de Calidad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="./img/logo.png" alt="Logo Colegio Excelencia" class="logo">
+                <span class="logo-text">U. E. P René Baralt</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="#requisitos" class="nav-link">Requisitos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="inscripcion.html" class="nav-link">inscripciones</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">U. E. P René Baralt</h1>
+            <p class="hero-subtitle animate-fade-in">Formando líderes con valores y conocimientos para un mundo mejor</p>
+            <a href="#contacto" class="cta-button animate-fade-in">Contáctanos</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section about-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Sobre Nosotros</h2>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <p>El Colegio Excelencia es una institución educativa fundada en 1995 con el objetivo de brindar una educación integral basada en valores, innovación y excelencia académica.</p>
+                    <p>Nuestro modelo educativo combina lo mejor de las metodologías tradicionales con enfoques modernos de aprendizaje, preparando a nuestros estudiantes para los desafíos del siglo XXI.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Profesores altamente calificados</li>
+                        <li><i class="fas fa-check-circle"></i> Instalaciones modernas y seguras</li>
+                        <li><i class="fas fa-check-circle"></i> Programa de educación emocional</li>
+                        <li><i class="fas fa-check-circle"></i> Actividades extracurriculares variadas</li>
+                    </ul>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <img src="./img/logo.png" alt="Estudiantes del Colegio Excelencia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Galería</h2>
+            <p class="section-subtitle animate-on-scroll">Conoce nuestras instalaciones y actividades</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-item animate-on-scroll">
+                    <img src="./img/1.jpeg" alt="Aula de clases">
+                    <div class="gallery-overlay">
+                        <h3>himno nacional</h3>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="./img/2.jpeg" alt="Laboratorio de ciencias">
+                    <div class="gallery-overlay">
+                        <h3>expo-evento</h3>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="./img/3.jpeg" alt="Actividad deportiva">
+                    <div class="gallery-overlay">
+                        <h3>Semana Bolivariana</h3>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="./img/4.jpeg" alt="Evento cultural">
+                    <div class="gallery-overlay">
+                        <h3>Eventos Culturales</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal" id="galleryModal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div class="modal-caption" id="modalCaption"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Requisitos -->
+    <section id="requisitos" class="section requirements-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Requisitos de Admisión</h2>
+            <p class="section-subtitle animate-on-scroll">Proceso de inscripción para el próximo ciclo escolar</p>
+            
+            <div class="requirements-container">
+                <div class="requirement-card animate-on-scroll">
+                    <div class="requirement-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Documentación</h3>
+                    <ul>
+                        <li>Acta de nacimiento (original y copia)</li>
+                        <li>CURP (copia)</li>
+                        <li>Certificado médico</li>
+                        <li>4 fotografías infantiles</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card animate-on-scroll">
+                    <div class="requirement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Académicos</h3>
+                    <ul>
+                        <li>Certificado de estudios anteriores</li>
+                        <li>Carta de buena conducta</li>
+                        <li>Evaluación diagnóstica</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card animate-on-scroll">
+                    <div class="requirement-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Proceso</h3>
+                    <ul>
+                        <li>Entrevista con padres</li>
+                        <li>Evaluación psicopedagógica</li>
+                        <li>Pago de inscripción</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="download-section animate-on-scroll">
+                <a href="#" class="download-button">
+                    <i class="fas fa-file-pdf"></i> Descargar requisitos completos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Contáctanos</h2>
+            <p class="section-subtitle animate-on-scroll">Estamos para responder tus preguntas</p>
+            
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Calle Educación #123, Col. Conocimiento, Ciudad Educativa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Teléfonos</h3>
+                            <p>55 1234 5678</p>
+                            <p>55 8765 4321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Correo Electrónico</h3>
+                            <p>info@colegioexcelencia.edu.mx</p>
+                            <p>admisiones@colegioexcelencia.edu.mx</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes: 7:30 am - 3:30 pm</p>
+                            <p>Sábados: 9:00 am - 1:00 pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate-on-scroll">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecciona un asunto</option>
+                                <option value="admissions">Admisiones</option>
+                                <option value="information">Información general</option>
+                                <option value="academic">Asuntos académicos</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Logo Colegio Excelencia">
+                    <p>Formando líderes para el futuro desde 1995</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#requisitos">Requisitos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Boletín Informativo</h3>
+                    <p>Suscríbete para recibir noticias y eventos</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Colegio Excelencia. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Aviso de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

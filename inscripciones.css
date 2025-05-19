@@ -1,0 +1,478 @@
+/* Variables de diseño */
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #3498db;
+    --color-acento: #e74c3c;
+    --color-texto: #34495e;
+    --color-fondo: #f9f9f9;
+    --color-borde: #ecf0f1;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --radio-borde: 10px;
+    --transicion: all 0.3s ease;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+.contenedor-requisitos {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 6rem;
+}
+
+/* Cabecera */
+.cabecera {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+.logo-institucion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-institucion i {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+}
+
+.cabecera h1 {
+    font-size: 2rem;
+    color: var(--color-primario);
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: var(--color-texto);
+    opacity: 0.8;
+}
+
+/* Lista de requisitos */
+.lista-requisitos {
+    display: grid;
+    gap: 30px;
+}
+
+.seccion-documentos, .seccion-procesos {
+    background: white;
+    border-radius: var(--radio-borde);
+    padding: 25px;
+    box-shadow: var(--sombra);
+}
+
+.seccion-documentos h2, .seccion-procesos h2 {
+    color: var(--color-primario);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-borde);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seccion-documentos h2 i {
+    color: var(--color-secundario);
+}
+
+.seccion-procesos h2 i {
+    color: var(--color-acento);
+}
+
+/* Items de requisitos */
+.requisito {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: var(--radio-borde);
+    background: var(--color-fondo);
+    transition: var(--transicion);
+}
+
+.requisito:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra);
+}
+
+.icono {
+    font-size: 1.8rem;
+    color: var(--color-secundario);
+    display: flex;
+    align-items: center;
+}
+
+.contenido h3 {
+    color: var(--color-primario);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contenido p {
+    color: var(--color-texto);
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+/* Pie de página */
+.pie-pagina {
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+    color: var(--color-texto);
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px 0;
+}
+
+.contacto a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transicion);
+}
+
+.contacto a:hover {
+    color: var(--color-primario);
+}
+
+.derechos {
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    .contenedor-requisitos {
+        padding: 15px;
+    }
+    
+    .cabecera h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitulo {
+        font-size: 1rem;
+    }
+    
+    .seccion-documentos, .seccion-procesos {
+        padding: 20px;
+    }
+    
+    .requisito {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .icono {
+        justify-content: center;
+    }
+    
+    .contenido {
+        text-align: center;
+    }
+    
+    .contacto {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-institucion {
+        flex-direction: column;
+    }
+    
+    .cabecera h1 {
+        font-size: 1.5rem;
+    }
+    
+    .seccion-documentos h2, .seccion-procesos h2 {
+        font-size: 1.2rem;
+    }
+    
+    .requisito {
+        padding: 12px;
+    }
+}
+
+/* Variables de colores */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+    --white: #fff;
+    --black: #000;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 15px auto 30px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Estilos del encabezado y navegación */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--dark-color);
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--dark-color);
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-link {
+        padding: 15px 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .cta-button {
+        padding: 10px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
