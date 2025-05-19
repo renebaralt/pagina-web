@@ -353,7 +353,6 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     overflow: auto;
-    animation: fadeIn 0.3s;
 }
 
 .modal-content {
@@ -361,7 +360,6 @@ img {
     margin: 60px auto;
     max-width: 90%;
     max-height: 80vh;
-    animation: zoomIn 0.3s;
 }
 
 .close-modal {
@@ -730,43 +728,9 @@ img {
     color: var(--secondary-color);
 }
 
-/* Animaciones */
-.animate-fade-in {
-    animation: fadeIn 1s ease forwards;
-}
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
 
-.animate-on-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 
 /* Efectos de desplazamiento suave para los enlaces */
 html {
